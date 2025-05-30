@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Mario Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white">
+
+    <nav class="bg-red-600 shadow-md fixed w-full z-50 top-0 border-b-4 border-red-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="mario-font text-2xl text-yellow-300 hover:text-white transition-colors duration-200">Julius Serrano</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-2">
+                        <a href="#home" class="nav-link">HOME</a>
+                        <a href="#about" class="nav-link">ABOUT</a>
+                        <a href="#arsenal" class="nav-link">ARSENAL</a>
+                        <a href="#projects" class="nav-link">PROJECTS</a>
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-yellow-300 hover:text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-400" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-red-700 border-t-2 border-red-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block nav-link text-center">HOME</a>
+                <a href="#about" class="block nav-link text-center">ABOUT</a>
+                <a href="#arsenal" class="block nav-link text-center">ARSENAL</a>
+                <a href="#projects" class="block nav-link text-center">PROJECTS</a>
+                <a href="#contact" class="block nav-link text-center">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(to bottom, #5C94FC, #7CAEFF);">
+        <div class="text-center px-4 py-12">
+            <img src="DSC_0433.JPG" alt="Your Pixelated Avatar" class="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-md mb-8 border-4 border-yellow-400 shadow-lg" style="image-rendering: pixelated;">
+            <h1 class="mario-font text-4xl sm:text-5xl md:text-6xl text-white mb-4" style="text-shadow: 3px 3px #78350f;">IT'S ME, JULIUS SERRANO!</h1>
+            <p class="mario-font text-lg sm:text-xl text-yellow-300 mb-8 max-w-2xl mx-auto" style="text-shadow: 2px 2px #78350f;">A BEGINNER GAME DEVELOPER READY FOR ADVENTURE!</p>
+            <a href="#projects" class="btn btn-secondary text-base mr-2 sm:mr-4">MY QUESTS</a>
+            <a href="#contact" class="btn btn-alt text-base">POWER-UP! (CONTACT)</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 sm:py-24 brick-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">LEVEL INFO</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center bg-yellow-100 p-6 sm:p-8 rounded-lg border-4 border-yellow-600" style="box-shadow: 4px 4px 0px #78350f;">
+                <div>
+                    <img src="2433b710-5670-4741-baf6-4b1382b2a281.jpg" alt="About Me Illustration" class="rounded-md shadow-lg w-full border-4 border-green-600" style="image-rendering: pixelated;">
+                </div>
+                <div class="text-brown-800 space-y-4 text-sm sm:text-base">
+                    <p><strong class="mario-font text-red-600">PLAYER:</strong> JULIUS SERRANO</p>
+                    <p><strong class="mario-font text-red-600">WORLD:</strong> RAWIS, LIBON, ALBAY</p>
+                    <p>I'm on a mission to craft awesome GAME DEV experiences! With <strong class="mario-font text-green-600">1</strong> coins (years) collected in the GAME DEV kingdom, I've mastered power-ups like <strong class="mario-font text-blue-600">PROGRAM</strong>, <strong class="mario-font text-blue-600">GAME PLAN</strong>, and <strong class="mario-font text-blue-600">STORYBOARDING</strong>.</p>
+                    <p>Always leveling up and eager for new co-op adventures. When not battling bugs or designing levels, I enjoy SINGING and PLAYING INSTRUMENTS!</p>
+                </div>
+                <!-- Place the button here, after the about me text, but still inside the grid -->
+                <div class="md:col-span-2 flex justify-end mt-4">
+                    <a href="resume.pdf" download class="download-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="arsenal" class="py-16 sm:py-24" style="background-color: #71C5CF;"> 
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">MY ARSENAL</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8">
+                <div class="tech-block">
+                    <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="C# Logo" class="tech-logo">
+                    <p class="tech-name">C#</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://cdn4.iconfinder.com/data/icons/various-icons-2/476/Unity.png" alt="Unity Logo" class="tech-logo">
+                    <p class="tech-name">Unity</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://i0.wp.com/smackstudio.com/wp-content/uploads/2021/07/SmackStudioLogo.png?resize=2048%2C1208&ssl=1" alt="SmackStudio Logo" class="tech-logo">
+                    <p class="tech-name">SmackStudio</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://logospng.org/download/html-5/logo-html-5-1536.png" alt="HTML5 Logo" class="tech-logo">
+                    <p class="tech-name">HTML</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS3 Logo" class="tech-logo">
+                    <p class="tech-name">CSS</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://i.pinimg.com/originals/13/40/7c/13407c12f50f08d328800c3caef43f61.png" alt="JavaScript Logo" class="tech-logo">
+                    <p class="tech-name">JavaScript</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/java-logo-png-transparent.png" alt="Java Logo" class="tech-logo">
+                    <p class="tech-name">Java</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://pngteam.com/images/python-logo-png-2000x2000_7d6af8d1_transparent_20249c.png.png" alt="Python Logo" class="tech-logo">
+                    <p class="tech-name">Python</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/075/949/original/adobe-photoshop-logo-transparent-free-png.png" alt="Photoshop Logo" class="tech-logo">
+                    <p class="tech-name">Photoshop</p>
+                </div>
+                <div class="tech-block">
+                    <img src="https://pnghq.com/wp-content/uploads/free-visual-studio-code-logo-transparent-png-download-now-768x772.png" alt="VS Code Logo" class="tech-logo">
+                    <p class="tech-name">VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 sm:py-24" style="background-color: #7CAEFF;">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">COMPLETED LEVELS</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="Screenshot 2025-02-06 154416.png" alt="Project 1" class="w-full h-48 object-cover border-b-4 border-yellow-600" style="image-rendering: pixelated;">
+                    <div class="p-6">
+                        <h3 class="mario-font text-xl mb-2 text-red-600">The Rise of Bathala</h3>
+                        <p class="text-brown-800 mb-4 text-sm">A captivating 2D fighting game combining pixel art and immersive storytelling. Built using Unity, the game features challenging quizzes about Philippine Gods, dynamic fights, and an engaging narrative that keeps players hooked from start to finish.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-red-200 text-red-700 text-xs mario-font mr-2 px-2 py-1 rounded">Unity</span>
+                            <span class="inline-block bg-green-200 text-green-700 text-xs mario-font mr-2 px-2 py-1 rounded">C#</span>
+                        </div>
+                        <a href="#" target="_blank" class="btn btn-primary text-xs">WARP PIPE! <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-24 brick-bg">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">MESSAGE BLOCK</h2>
+            <p class="text-center text-lg text-yellow-200 mb-10 mario-font" style="text-shadow: 1px 1px #78350f;">Got a map to a new quest? Or just want to team up?</p>
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="space-y-6 bg-yellow-100 p-6 sm:p-8 rounded-lg border-4 border-yellow-600" style="box-shadow: 4px 4px 0px #78350f;">
+                <div>
+                    <label for="name" class="block text-sm mario-font text-red-600 mb-1">PLAYER NAME:</label>
+                    <input type="text" name="name" id="name" required class="contact-input" placeholder="Mario">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm mario-font text-red-600 mb-1">EMAIL PIPE:</label>
+                    <input type="email" name="email" id="email" required class="contact-input" placeholder="mario@mushroomkingdom.com">
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm mario-font text-red-600 mb-1">QUEST TITLE:</label>
+                    <input type="text" name="subject" id="subject" required class="contact-input" placeholder="Save Princess Peach!">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm mario-font text-red-600 mb-1">SCROLL (MESSAGE):</label>
+                    <textarea name="message" id="message" rows="5" required class="contact-input" placeholder="Let's-a go!"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary text-lg w-full sm:w-auto">SEND STAR!</button>
+                </div>
+            </form>
+            <p class="text-center text-xs text-yellow-300 mt-4 mario-font">
+             
+            </p>
+        </div>
+    </section>
+
+    <footer class="ground-footer text-yellow-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-6">
+                <a href="https://www.linkedin.com/in/julius-serrano-328a68337/" target="_blank" class="text-yellow-300 hover:text-white mx-2 text-2xl transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Y0Iii" target="_blank" class="text-yellow-300 hover:text-white mx-2 text-2xl transition-colors"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/julius.serrano.716" target="_blank" class="text-yellow-300 hover:text-white mx-2 text-2xl transition-colors"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="text-sm mario-font">&copy; <span id="currentYear"></span> Julius Serrano. GAME OVER? NEVER!</p>
+            <p class="text-xs mt-2 mario-font">Powered by <a href="https://tailwindcss.com/" class="hover:text-white" target="_blank">Tailwind Mushrooms</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

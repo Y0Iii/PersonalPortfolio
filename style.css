@@ -1,0 +1,95 @@
+ body {
+            font-family: 'Inter', sans-serif; /* Default body font for readability */
+            scroll-behavior: smooth;
+            background-color: #5C94FC; /* Mario sky blue */
+            color: #FFFFFF; /* Default text color to white for better contrast on dark backgrounds */
+        }
+        .mario-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .section-title {
+            @apply mario-font text-3xl sm:text-4xl text-center mb-12 text-yellow-400; /* Yellow like coins/stars */
+            text-shadow: 2px 2px #78350f; /* Brown shadow for depth */
+        }
+        .nav-link {
+            @apply mario-font px-3 py-2 rounded-md text-sm text-white hover:bg-yellow-400 hover:text-red-600 transition-colors duration-200;
+        }
+        .project-card {
+            @apply bg-yellow-200 border-4 border-yellow-600 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300;
+            box-shadow: 4px 4px 0px #78350f; /* Brown "block" shadow */
+        }
+        .contact-input {
+            @apply w-full px-4 py-3 rounded-md bg-white border-2 border-yellow-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-shadow text-gray-700;
+        }
+        .btn {
+            @apply mario-font px-4 py-3 rounded-lg font-semibold text-white transition-all duration-200 ease-in-out;
+            border-bottom-width: 4px;
+            transform: translateY(0); /* Base state for press effect */
+        }
+        .btn:active {
+            transform: translateY(2px); /* Press effect */
+            border-bottom-width: 2px;
+        }
+        .btn-primary { /* Mario Red */
+            @apply bg-red-500 border-red-700 hover:bg-red-600;
+        }
+        .btn-secondary { /* Green like pipes/Luigi */
+            @apply bg-green-500 border-green-700 hover:bg-green-600;
+        }
+        .btn-alt { /* Yellow like blocks */
+            @apply bg-yellow-400 border-yellow-600 text-brown-800 hover:bg-yellow-500; /* text-brown-800 is a custom class, ensure it's defined or use Tailwind default like text-yellow-800 */
+        }
+
+        /* Brick background for sections */
+        .brick-bg {
+            background-color: #D97706; /* Brownish-orange for bricks */
+            background-image:
+                linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+                linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+            background-size: 100px 50px, 100px 50px, 20px 10px, 20px 10px;
+            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+        }
+
+        /* Ground block style for footer */
+        .ground-footer {
+            background-color: #78350F; /* Dark brown for ground */
+            border-top: 8px solid #FBBF24; /* Yellow top like ground blocks */
+        }
+
+        /* Question block style for skill tags / tech stack */
+        .skill-block {
+            @apply mario-font bg-yellow-400 text-yellow-800 px-3 py-2 rounded-md text-xs border-2 border-yellow-600 shadow-sm hover:bg-yellow-500 transition-colors;
+            min-width: 80px;
+            text-align: center;
+        }
+        .tech-block {
+            @apply bg-yellow-100 border-4 border-yellow-500 rounded-lg p-4 flex flex-col items-center justify-center text-center transition-transform hover:scale-105;
+            box-shadow: 3px 3px 0px #78350f;
+            min-height: 120px; /* Ensure blocks have some height */
+        }
+        .tech-logo {
+            @apply w-12 h-12 mb-2 object-contain; /* Use object-contain for logos */
+            image-rendering: pixelated; /* Keep pixelated style for logos */
+        }
+        .tech-name {
+            @apply mario-font text-xs text-red-600;
+        }
+        /* Custom text color for readability on yellow background */
+        .text-brown-800 { color: #422006; } /* Example custom brown */
+  .download-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 90px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            border-top: 40px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
