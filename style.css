@@ -20,7 +20,7 @@
         }
         .contact-input {
             color: black;
-            font-family: 'Press Start 2P', cursive:
+            font-family: 'Press Start 2P', cursive;
             font-size: 10px;
         }
         .btn {
@@ -96,3 +96,4 @@
             background-color: #0056b3;
 
         }
+
